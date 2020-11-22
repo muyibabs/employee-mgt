@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src='js/jquery.min.js'></script>
+    <script src='js/bootstrapvalidator.min.js'></script>
+    <script src="js/validate-aa.js"></script>
+</head>
+<body>
+<form class="form-horizontal" id="validateForm">
+    <div class="row">
+        <div class="col-md-offset-1 col-md-4">
+
+            <div class="form-group">
+                <label class="control-label">Full Name:</label>
+                <input  name="full_name" placeholder="Full Name" class="form-control"  type="text">
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">Phone No.:</label>
+                <input name="phone" placeholder="Phone No" class="form-control" type="text">
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">Address:</label>
+                <textarea class="form-control" name="address" placeholder="Address..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label " >Sex:</label>
+                <div class="radio">
+                    <label><input type="radio" name="gender" value="male" /> Male</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="gender" value="female" /> Female</label>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-offset-1 col-md-4">
+            <div class="form-group">
+                <label class="control-label">E-Mail:</label>
+                <input name="email" placeholder="E-Mail" class="form-control"  type="text">
+            </div>
+
+            <div class="form-group has-feedback">
+                <label for="password"  class="control-label">Password</label>
+                <input class="form-control" id="userPw" type="password" placeholder="password" name="password"  />
+            </div>
+
+            <div class="form-group has-feedback">
+                <label for="confirmPassword"  class="control-label"> Confirm Password </label>
+                <input class="form-control" id="userPw2" type="password" placeholder="Confirm password" name="confirmPassword" />
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">Role:</label>
+                <select name="role" class="form-control" >
+                    <option value=" " >Please select role</option>
+                    <option>Admin</option>
+                    <option>User</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Language Known:</label>
+                <div class="checkbox">
+                    <label><input type="checkbox" name="lang_known[]" value="E" /> English</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" name="lang_known[]" value="T" /> Tamil</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" name="lang_known[]" value="O" /> Other</label>
+                </div>
+            </div>
+
+
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-success" >Submit</button>
+            </div>
+
+        </div>
+    </div>
+
+</form>
+</body>
+</html>
